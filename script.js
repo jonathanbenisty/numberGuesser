@@ -17,3 +17,14 @@ const compareGuesses = (currentHumanGuess, computerGuess, target) => {
         return false;
     } 
 };
+
+const updateScore = winner => {
+   
+    if (winner === "human") {
+        humanScore ++;
+    } else {
+        computerScore ++;
+    }
+}
+
+let advanceRound = () => currentRoundNumber += 1;
